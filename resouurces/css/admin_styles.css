@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header */
+h1 {
+    color: #333;
+}
+
+/* Profile Image */
+img {
+    border-radius: 50%;
+    border: 2px solid #5FCF80; /* Green border */
+    margin-bottom: 20px;
+}
+
+/* Notifications Section */
+#notifications {
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Notification Messages */
+.notification {
+    background-color: #e7f3fe; /* Light blue background */
+    border-left: 5px solid #2196F3; /* Blue left border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.notification p {
+    margin: 0; /* Remove default margin */
+}
+
+.notification small {
+    display: block; /* Make timestamp on a new line */
+    color: gray;
+}
+
+/* Enrolled Courses Section */
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default padding */
+}
+
+li {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #2196F3; /* Blue color for links */
+}
+
+li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: #5FCF80; /* Green button color */
+    border-radius: 5px;
+}
+
+.btn-danger {
+    background-color: #f44336; /* Red button for delete action */
+}
+
+.btn:hover {
+    opacity: 0.8; /* Slightly transparent on hover */
+}
+
+/* Logout Link */
+a.logout-link {
+    color: #f44336; /* Red color for logout link */
+}

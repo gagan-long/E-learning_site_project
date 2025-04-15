@@ -1,0 +1,169 @@
+Zero level DFD
+
+
+                    +---------------------+
+                    |      User           |
+                    +----------+----------+
+                               |
+                               | Login Credentials
+                               | Enrollment Request
+                               | Profile Update
+                               |
+                    +----------v----------+
+                    |  LearnToCode System |
+                    +----------+----------+
+                               |
+                               | Available Courses
+                               | Enrollment Confirmation
+                               |
+                    +----------v----------+
+                    |      Admin          |
+                    +----------+----------+
+                               |
+                               | Course Management Requests
+                               |
+                    +----------v----------+
+                    |   Payment Gateway    |
+                    +---------------------+
+                               |
+                               | Payment Information
+                               |
+                    +----------v----------+
+                    |   LearnToCode System |
+                    +---------------------+
+
+
+
+First level DFD
+                    +---------------------+
+                    |      User           |
+                    +----------+----------+
+                               |
+                               | Login Credentials
+                               | Registration Information
+                               |
+                    +----------v----------+
+                    |   User Authentication|
+                    +----------+----------+
+                               |
+                               | Authentication Status
+                               |
+                    +----------v----------+
+                    |  LearnToCode System |
+                    +----------+----------+
+                               |
+                               | Course Data (Add/Edit/Delete)
+                               |
+                    +----------v----------+
+                    |    Course Management |
+                    +----------+----------+
+                               |
+                               | Available Courses
+                               | Enrollment Request
+                               |
+                    +----------v----------+
+                    | Enrollment Management|
+                    +----------+----------+
+                               |
+                               | Payment Information
+                               |
+                    +----------v----------+
+                    |   Payment Processing |
+                    +----------+----------+
+                               |
+                               | Transaction Details
+                               |
+                    +----------v----------+
+                    |   Payment Gateway    |
+                    +---------------------+
+                               |
+                               | Payment Confirmation
+                               |
+                    +---------------------+
+                    | Notification        |
+                    +---------------------+
+
+
+
+
+second level DFD
+
+                    +---------------------+
+                    |      User           |
+                    +----------+----------+
+                               |
+                               | Login Credentials
+                               |
+                    +----------v----------+
+                    |   User Authentication|
+                    +----------+----------+
+                               |
+          +--------------------+--------------------+
+          |                                         |
+          |                                         |
++---------v---------+                       +-------v--------+
+|    Login Process   |                       | Registration    |
++---------+---------+                       +-------+--------+
+          |                                         |
+          | Authentication Status                   | Registration Confirmation
+          +--------------------+--------------------+
+                               |
+                    +----------v----------+
+                    |  LearnToCode System |
+                    +----------+----------+
+                               |
+                               | Course Data (Add/Edit/Delete)
+                               |
+                    +----------v----------+
+                    |    Course Management |
+                    +----------+----------+
+                               |
+          +--------------------+--------------------+
+          |                                         |
+          |                                         |
++---------v---------+                       +-------v--------+
+|      Add Course    |                       |    Edit Course  |
++---------+---------+                       +-------+--------+
+          |                                         |
+          | Updated Course List                      | Updated Course List
+          +--------------------+--------------------+
+                               |
+                    +----------v----------+
+                    | Enrollment Management|
+                    +----------+----------+
+                               |
+          +--------------------+--------------------+
+          |                                         |
+          |                                         |
++---------v---------+                       +-------v--------+
+|     Enroll User    |                       | View Enrollments|
++---------+---------+                       +-------+--------+
+          |                                         |
+          | Enrollment Confirmation                  | Enrolled Courses
+          +--------------------+--------------------+
+                               |
+                    +----------v----------+
+                    | Profile Management   |
+                    +----------+----------+
+                               |
+          +--------------------+--------------------+
+          |                                         |
+          |                                         |
++---------v---------+                       +-------v--------+
+|    Update Profile  |                       | Change Password|
++---------+---------+                       +-------+--------+
+          |                                         |
+          | Profile Update Confirmation              | Password Change Confirmation
+          +--------------------+--------------------+
+                               |
+                    +----------v----------+
+                    | Payment Processing   |
+                    +----------+----------+
+                               |
+                               | Payment Information
+                               |
+                    +----------v----------+
+                    |   Payment Gateway    |
+                    +---------------------+
+
+
